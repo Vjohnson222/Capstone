@@ -24,7 +24,7 @@ const Gallery = () => {
       <p>
         {" "}
         <Link
-          to="/terminology"
+          to="/Videos"
           className="navbar2"
           style={{
             textDecoration: "none",
@@ -43,7 +43,7 @@ const Gallery = () => {
       <p>
         {" "}
         <Link
-          to="/terminology"
+          to="/Videos"
           className="navbar2"
           style={{
             textDecoration: "none",
@@ -113,6 +113,8 @@ const Gallery = () => {
       </figure>
 
       <div id="carousel">
+
+        {/* I silenced the old button and I took the whole party out of this carousel...It's debatable  */}
         {/* <button
           className="prevNext"
           style={{

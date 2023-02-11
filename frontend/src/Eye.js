@@ -24,7 +24,7 @@ const Eye = () => {
       <br /><br /><br /><br />
       <h1 style={h1Style}><p>Dance Flow</p></h1>
       <br />
-      <img src={seven} alt="logo" style={{width: "1200px",height: "80px", borderRadius:'10%',marginTop:"-25px", marginLeft: '40px', opacity: "0.9"}}/>
+      <img src={seven} alt="logo" style={{width: "1300px",height: "80px", borderRadius:'10%',marginTop:"-25px", marginLeft: '2px', opacity: "0.9"}}/>
 
       <div className="eye-outer" style={divStyle}>
         <div className="eye-inner">
