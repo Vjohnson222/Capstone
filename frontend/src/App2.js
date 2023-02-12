@@ -62,7 +62,7 @@ function App2() {
 <br />
 
       <div className="navbar2" > 
-      <img src={logo} alt="logo" className = "logo" style={{ borderRadius:'10%',marginTop:"-35px", marginLeft: '60px', opacity: "0.9"}}/>
+      <img src={logo} alt="logo" className = "logo" style={{ borderRadius:'10%',marginTop:"-55px", marginLeft: '60px', opacity: "0.9"}}/>
 
 
       

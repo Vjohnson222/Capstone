@@ -19,7 +19,9 @@ const Gallery = () => {
 
   return (
     <div>
-
+    <div style={{ marginLeft: '220px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
+   Round And Round We Go
+    </div>
       
       <p>
         {" "}
@@ -40,39 +42,21 @@ const Gallery = () => {
         </Link>{" "}
       </p>
 
-      <p>
-        {" "}
-        <Link
-          to="/Videos"
-          className="navbar2"
-          style={{
-            textDecoration: "none",
-            padding: "5px",
-            marginTop: "-50px",
-            marginLeft: "1100px",
-            color: "white",
-            fontSize: "18px",
-          }}
-        >
-          {" "}
-          Events
-        </Link>{" "}
-      </p>
       <ul>
         <li>
           <img
-            className="left"
+            className="left2"
             src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg"
           />
         </li>
         <li>
           <img
-            className="right"
+            className="right2"
             src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg"
           />
         </li>
       </ul>
-      <div className="left" 
+      <div className="left2" 
         style={{
          
           background: "transparent",
@@ -86,7 +70,7 @@ const Gallery = () => {
       onClick={() => galleryspin("")}>
         
       </div>
-      <div className="right" 
+      <div className="right2" 
         style={{
          
           background: "transparent",

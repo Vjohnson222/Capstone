@@ -76,8 +76,11 @@ function Terminology() {
   ];
 
   return (
-
-    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: '60px', borderTop: "solid white 3px"}}>
+    <div>
+    <div style={{ marginLeft: '220px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
+    Flip,  Learn,  And Apply
+    </div>
+    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: '20px', borderTop: "solid white 2px"}}>
      <hr />
       {cards.map((data, index) => (
         <div className="flip-card" key={index} style={{ display: "inline-block", width: "20%", borderRadius: "10%" }}>
@@ -93,7 +96,7 @@ function Terminology() {
         </div>
       ))}
     </div>
-    
+    </div>
   );
 }
 

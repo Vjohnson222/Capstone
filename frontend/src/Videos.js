@@ -3,6 +3,7 @@ import seven1 from "./seven1.png";
 import Videos2 from './Videos2';
 import Thumb from './Thumb';
 import seven from "./seven.png";
+import Extra from './Extra';
 
 
 const Videos = () => {
@@ -30,7 +31,7 @@ const Videos = () => {
       
         <div id="caption">
             <span className="close" style={{ marginLeft: "920px" }}onClick={handleCloseClick}>&times;</span>
-          <div className="modal-content close myImg" id="img01">  <Videos2 /> </div>            
+          <div className="modal-content close myImg" id="img01">  <Extra /> </div>            
 
           </div>
         </div>

@@ -111,9 +111,11 @@ return (
             <li><img className="left" src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg" /></li>
             <li><img className="right" src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg" /></li>
           </ul>
-         <div className="image image-height">
+         {/* <div className="imagei image-height"> */}
     <img className="images" src={require(`${arr[count]}`)} alt={`img${count}`} />
-    </div>
+    {/* <button onClick={handleLeftClick}>Left</button>
+    <button onClick={handleRightClick}>Right</button> */}
+  {/* </div> */}
           </main>
       </div>
     </div>
@@ -128,11 +130,11 @@ return (
         
       </div>
     </div>
-    <div className="left" style ={{color: "transparent"}} onClick={handleLeftClick}>
-            ←←←
+    <div className="left" onClick={handleLeftClick}>
+            ←
           </div>
-          <div className="right" style ={{color: "transparent"}}onClick={handleRightClick}>
-            →←←
+          <div className="right" onClick={handleRightClick}>
+            →
           </div>
     
   </div>

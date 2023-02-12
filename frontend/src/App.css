@@ -73,6 +73,7 @@ font-size: 22px;
 
 
 
+
 html {
   width: 100%;
   height:100%
@@ -165,11 +166,17 @@ body {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border: 2px solid black;
+  border-radius: 10px;
 
 }
+/* Dance Flow  */
+/* .eyeContainer{
 
+ position: fixed;
+} */
 .flip-card2:hover .flip-card-inner2 {
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 .flip-card-front2, .flip-card-back2 {
@@ -179,18 +186,20 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: black;
-
+  border-radius: 10px;
 }
 .flip-card-front2{
   background-image: url('tendu.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  border-radius: 10px;
 }
 
 
 .flip-card-back2 {
   color: black;
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 
@@ -204,6 +213,7 @@ body {
   margin-left: 20px;
   margin-top: 10px;
   border-radius: 10%;
+  
 
 }
 
@@ -216,10 +226,12 @@ body {
   transition: transform 4.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 .flip-card-front, .flip-card-back {
@@ -233,6 +245,7 @@ body {
 
 .flip-card-front {
   color: black;
+  border-radius: 10px;
 }
 
 .flip-card-back {
@@ -242,19 +255,31 @@ body {
 
 }
 
-#footer{
+/* #footer{
 padding: 40px;
 margin: 0px;
-}
+} */
 .navLink{
   padding-right: 15px;
   
 }
-
+.navLink {
+  animation: fadeIn .5s ease-in-out;
+  opacity: 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .navbar{
   padding-top: 60px;
+  position: fixed;
 
-height: 60px;
+/* height: 60px; */
   float: right;
   margin-right: 260px;
   font-style: italic;
@@ -267,13 +292,15 @@ height: 60px;
         border: solid rgb(83, 81, 81) 1px;
     }
     .navbar2{
-      padding-top: 60px;
+     
+      padding-top: 0;
       height: 60px;
-      margin: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
       font-style: italic;
       padding-left: 0px;
       border-radius: 10px;
-      height: 800px;
+      height: 1600px;
             background-color: rgb(49, 2, 2);
             border: solid rgb(83, 81, 81) 1px;
       
@@ -282,10 +309,11 @@ height: 60px;
 
 div#carousel { 
   perspective: 1800px; 
-  padding-top: 5%; 
+  padding-top: 15%; 
   font-size:0; 
-  margin-bottom: 3rem; 
+  /* margin-bottom: 3rem;  */
   /* overflow: hidden;  */
+  margin-top: 20px;
 }
 figure#spinner { 
   transform-style: preserve-3d; 
@@ -297,7 +325,7 @@ figure#spinner img {
   width: 40%; max-width: 325px; 
   height: 450px; 
 border-radius: 10%;
-  position: absolute; left: 29%;
+  position: absolute; left: 30%;
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent; 
 }
@@ -328,6 +356,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 /* positioning video Me  */
 #camera, #camera--view, #camera--sensor, #camera--output{
+  /* //Dont change this belwo  */
     position: absolute;
     height: 100%;
     width: 525px;
@@ -337,21 +366,24 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
    
 }
 /* positioning output */
+
+/* right here  */
 #camera {
-  margin-top: 120px;
+  margin-top: 1px;
+  /* //Dont change this belwo  */
   position: static;
   height: 100%;
   width: 50%;
    float: right;
 }
-
+/* //Oh my goodness that took way too long  */
 .images {
-  margin-top: 130px;
+  margin-top: 6px;
 
-  position: absolute;
+ position:absolute;
   object-fit: cover;
   height: 100%;
-  width: 50%;
+  width: 48%;
    float: left;
    margin-left: 30px;
 }
@@ -360,18 +392,19 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     transform: scaleX(-1);
     /* filter: FlipH; */
 }
+/* -----------------------------------wow------------------------- */
 
+/* I like the bigger camera option even better  */
 /* video Me  */
-#camera--view{
+/* #camera--view{
     height: 200px!important;
     width: 140px!important;
-    /* transition: all 0.5s ease-in; */
     border: solid 3px white;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     top: 180px;
     right: 20px;
     z-index: 3;
-  }
+  } */
 #camera--trigger{
     width: 200px;
     background-color: black;
@@ -392,17 +425,32 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 .left {
   position: absolute;
   z-index: 10;
-  top: 53%;
+  top: 23%;
   right: 92%;
 }
 
 .right {
   position: absolute;
   z-index: 10;
+  top: 23%;
+  left:48%;
+}
+
+
+.left2 {
+  position: absolute;
+  z-index: 10;
+  top: 53%;
+  right: 92%;
+}
+
+.right2 {
+  position: absolute;
+  z-index: 10;
   top: 53%;
   left:92%;
 }
-
+/* //Leave this quiet  */
 
 /* .image {
   position: relative;
@@ -429,7 +477,7 @@ ul {
 .column2 {
   float: right;
   width:50%;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 /* Clearfix (clear floats) */
@@ -480,9 +528,9 @@ ul {
   right: -0.5rem;
   border-radius: 50%;
 }
+
+/* //Nothin above here is being used  */
 .review {
-  /* background: rgb(0, 6, 14); */
- 
   margin-top: 100px;
   height: 650px;
   opacity: .9;
@@ -492,9 +540,7 @@ ul {
   transition: var(--transition);
   text-align: center;
   color: white;
-  /* min-width: 500px;
-  max-height: 1350px; */
-  box-shadow: 0 0 400px var(--clr-primary-5);
+   box-shadow: 0 0 400px var(--clr-primary-5);
   /* transition: all 5s; */
 }
 .review:hover {
@@ -511,8 +557,6 @@ ul {
   height: 50px;
   width:50px;
 }
-
-
 .modal {
   background-color: transparent;
    background-image: url("seven1.png");
@@ -520,7 +564,6 @@ ul {
    background-size: cover;
   display: none; 
   position: fixed; 
-  /* z-index: 1;  */
   padding-top: 50px;
   left: 0;
   top: 0;
@@ -534,7 +577,6 @@ ul {
   }
 .modal-content {
   height:1px;
-
   animation-name: zoom;
   animation-duration: 13.9s;
 }
@@ -550,16 +592,20 @@ ul {
 }
 /* Videos 2  */
 
-.navbar {
+/* //This below is questionable  */
+
+/* .navbar {
   position: fixed;
   top: 20px;
-}
-body {
+} */
+
+/* //#2 This below is questionable  */
+/* body {
  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 #video {
   position: fixed;
@@ -568,34 +614,36 @@ body {
   border-radius: 50%;
   top: 150px;
   left: 230px;
-  /* opacity: 0.5; */
+
 }
 .thumb {
   position: sticky;
   width: 120px;
-  height: 70px;
+  height: 60px;
   border-radius: 4px;
   color: white;
+  font-size: 2px;
+  margin-right: 20px;
+  float: left;
+
 }
-main {
+/* main {
   padding: 370px 18px 10px;
-}
+} */
 article {
   display: flex;
   align-items: left;
-  padding: 8px 12px;
   border-radius: 8px;
   transition: all 0.2s ease;
-  margin: 0 auto;
+width: 160px;
   color: white;
+  margin: 10px;
 }
 article:hover {
-  border: 2px solid blue;
-  background-color: blue;
+  border: 2px solid red;
+  background-color: rgb(174, 8, 8);
   opacity: 0.3;
 }
-.details {
-  padding: 8px 12px;
-}
+
 
 

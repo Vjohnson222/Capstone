@@ -36,12 +36,23 @@ const Thumb = () => {
 
   return (
     <div className="container2">
-     
+      <section id="video">
+        <iframe
+          width="160"
+          height="115"
+          src={`https://www.youtube.com/embed/${id}`}
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </section>
       <main onClick={handleClick}>
         {data.items &&
           data.items.map((item, i) => {
             const thumb = item.snippet.thumbnails && item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url : null;
-           const title = item.snippet.title;
+
+            // const thumb = item.snippet.thumbnails.medium.url;
+            const title = item.snippet.title;
             const description = item.snippet.description.substring(0, 100);
             const vid = item.snippet.resourceId.videoId;
             return (
