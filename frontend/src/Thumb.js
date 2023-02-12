@@ -38,7 +38,7 @@ const Thumb = () => {
     <div className="container2">
       <section id="video">
         <iframe
-          width="160"
+          width="260"
           height="115"
           src={`https://www.youtube.com/embed/${id}`}
           frameBorder="0"
@@ -58,10 +58,7 @@ const Thumb = () => {
             return (
               <article key={i} data-key={vid}>
                 <img src={thumb} alt="" className="thumb" />
-                <div className="details">
-                  <h2>{title}</h2>
-                  <p>{description}</p>
-                </div>
+                
               </article>
             );
           })}

@@ -41,7 +41,25 @@ const Gallery = () => {
           Videos
         </Link>{" "}
       </p>
-
+      {/* ---------------------Timer */}
+      <p>
+        {" "}
+        <Link
+          to="/Timer"
+          className="navbar2"
+          style={{
+            textDecoration: "none",
+            padding: "5px",
+            marginTop: "-50px",
+            marginLeft: "1080px",
+            color: "white",
+            fontSize: "18px",
+          }}
+        >
+          {" "}
+          Timer
+        </Link>{" "}
+      </p>
       <ul>
         <li>
           <img

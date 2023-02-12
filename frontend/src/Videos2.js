@@ -55,15 +55,15 @@ const Videos2 = () => {
             const title = item.snippet.title;
             const description = item.snippet.description.substring(0, 100);
             const vid = item.snippet.resourceId.videoId;
-            // return (
-            //   <article key={i} data-key={vid}>
-            //     <img src={thumb} alt="" className="thumb" />
-            //     <div className="details">
-            //       <h2>{title}</h2>
-            //       <p>{description}</p>
-            //     </div>
-            //   </article>
-            // );
+            return (
+              <article key={i} data-key={vid}>
+                <img src={thumb} alt="" className="thumb" />
+                <div className="details">
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                </div>
+              </article>
+            );
           })}
       </main>
     </div>

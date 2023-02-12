@@ -21,21 +21,25 @@ const Videos = () => {
 
   return (
     <div className="container">
+
+      
       <div className="review">
       {/* <Thumb className="thumb" /> */}
 
         <img src={seven1} className="myImg" style={{ width: "300px", height: "200px" }}  onClick={handleImageClick} />
-      
-        <Thumb className="thumb" />
+      {/* Sheesh !!!!  so just remove this for now and let it ride the modal */}
+        {/* <Thumb className="thumb" /> */}
         <div id="myModal" className="modal" style={{ display: modalDisplay }}>
       
-        <div id="caption">
-            <span className="close" style={{ marginLeft: "920px" }}onClick={handleCloseClick}>&times;</span>
-          <div className="modal-content close myImg" id="img01">  <Extra /> </div>            
+        <div className="modal-content close myImg" id="img01"><Thumb/> </div>     
+        <span className="close video"  style={{ marginLeft: "920px" }}onClick={handleCloseClick}>&times;</span>
+         
+         {/* This is what gets to ride the modal  */}
+         {/* <div className="modal-content close myImg" id="img01"> <Videos2/> </div>             */}
 
-          </div>
+          </div>       
         </div>
-      </div>
+        
     </div>
   );
 };

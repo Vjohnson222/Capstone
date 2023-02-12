@@ -6,6 +6,8 @@ import Gallery from "./Gallery";
 import Your from "./Your"
 import logo from "./logo.png";
 import Videos from "./Videos";
+import Timer from "./Timer";
+
 
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -46,6 +48,15 @@ function App2() {
 ) : (
   ""
 )}
+
+{/* ----------TERNARY----------------Timer------------- */}
+{loggedIn ? (
+  <Link className="navLink" to="/Timer">
+    Timer{" "}
+  </Link>
+) : (
+  ""
+)}
 {/* --------------------------ART IN MOTION------------- */}
 
 <Link className="navLink" to="/Gallery">
@@ -73,6 +84,8 @@ function App2() {
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Your" element={<Your />} />
             <Route path="/Videos" element={<Videos />} />
+            <Route path="/Timer" element={<Timer />} />
+
 
 
           </Routes>
