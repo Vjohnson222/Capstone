@@ -17,7 +17,7 @@ function App2() {
 
   
   return (
-    <Router>
+    <Router className="navbar" >
       <br />
          <nav className="navbar" >
 
@@ -85,6 +85,7 @@ function App2() {
             <Route path="/Your" element={<Your />} />
             <Route path="/Videos" element={<Videos />} />
             <Route path="/Timer" element={<Timer />} />
+            
 
 
 

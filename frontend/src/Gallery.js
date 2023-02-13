@@ -19,7 +19,7 @@ const Gallery = () => {
 
   return (
     <div>
-    <div style={{ marginLeft: '220px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
+    <div style={{ marginLeft: '520px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
    Round And Round We Go
     </div>
       
