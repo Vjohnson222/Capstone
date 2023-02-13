@@ -1,25 +1,29 @@
-import React, {Component} from "react";
+import React, { useState, useEffect } from 'react';
 
+const Timer = () => {
+  const [count, setCount] = useState(10);
+  const [isRunning, setIsRunning] = useState(false);
 
-class Timer extends Component {
+  useEffect(() => {
+    if (isRunning && count > 0) {
+      const intervalId = setInterval(() => {
+        setCount((prevCount) => prevCount - 1);
+      }, 1000);
 
-    constructor (props){
-        super(props)
-        this.state = {
-            count:0
-        }
+      return () => clearInterval(intervalId);
     }
- render (){
-    const {count} = this.state
+  }, [count, isRunning]);
 
-    return (
-        <div>
+  const handleStart = () => {
+    setIsRunning(true);
+  };
 
-<h1  style={{color: "white"}}>
-    Current Count: {count}
-</h1>
-        </div>
-    )
- }
-}
-export default Timer
+  return (
+    <div>
+      <h6 className="camera--trigger2">{count}</h6>
+      {!isRunning && <button className="camera--trigger3" onClick={handleStart}>Start</button>}
+    </div>
+  );
+};
+
+export default Timer;

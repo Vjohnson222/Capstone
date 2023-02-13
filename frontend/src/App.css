@@ -306,7 +306,7 @@ margin: 0px;
       font-style: italic;
       padding-left: 0px;
       border-radius: 10px;
-      height: 1600px;
+      height: 750px;
             background-color: rgb(49, 2, 2);
             border: solid rgb(83, 81, 81) 1px;
             animation-duration: 13.9s;
@@ -414,7 +414,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   } */
 #camera--trigger{
     width: 200px;
-    background-color: black;
+    background-color: transparent;
     color: white;
     font-size: 16px;
     border-radius: 30px;
@@ -427,8 +427,38 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     left: calc(50% - 100px);
 }
 
-
-
+.camera--trigger{
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 100px);
+}
+/* This is 10  */
+.camera--trigger2{
+ padding-left: 70px;
+}
+/* This is start  */
+.camera--trigger3{
+ 
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+ 
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+ 
+  left: calc(50% - 100px);
+ }
 .left {
   position: absolute;
   z-index: 10;

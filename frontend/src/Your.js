@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import Timer from "./Timer";
+import RefreshButton from "./RefreshButton";
 
 const Your = () => {
   const [count, setCount] = useState(0);
@@ -41,8 +43,7 @@ const Your = () => {
 
   }, []);
 
-
-
+ 
 const handleCameraTrigger = () => {
   setTimeout(() => {
 
@@ -66,27 +67,6 @@ const handleCameraTrigger = () => {
 }, 15000);
 };
 
-const CountDownTimer = () => {
-  const [count, setCount] = useState(10);
-  const [isRunning, setIsRunning] = useState(false);
-  const [timer, setTimer] = useState(null);
-
-  useEffect(() => {
-    if (isRunning) {
-      setTimer(
-        setInterval(() => {
-          setCount(count - 1);
-        }, 1000)
-      );
-    }
-    return () => clearInterval(timer);
-  }, [count, isRunning]);
-
-  const handleStart = () => {
-    setIsRunning(true);
-  };
-}
-
 const handleLeftClick = () => {
   if (count === 0) {
   setCount(len - 1);
@@ -102,6 +82,7 @@ const handleLeftClick = () => {
   setCount(count + 1);
   }
   };
+  
 return (
   <div >
     <div className="row" >
@@ -123,9 +104,21 @@ return (
           <canvas id="camera--sensor"></canvas>
           <video id="camera--view" autoPlay playsInline></video>
           <img src="//:0" alt="" id="camera--output" />
-          <button id="camera--trigger" onClick={handleCameraTrigger}>Take a picture</button>
+          <button  id="camera--trigger" onClick={handleCameraTrigger}>
+         
+  Take a picture
+  
+  <div >  
+  
+  
+    <Timer  />
+  </div>
+ 
+</button>
+
+
         </main>
-        
+        <RefreshButton/>
       </div>
     </div>
     <div className="left" style ={{color: "transparent"}} onClick={handleLeftClick}>
