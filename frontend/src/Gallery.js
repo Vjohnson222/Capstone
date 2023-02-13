@@ -42,7 +42,7 @@ const Gallery = () => {
         </Link>{" "}
       </p>
       {/* ---------------------Timer */}
-      <p>
+      {/* <p>
         {" "}
         <Link
           to="/Timer"
@@ -59,7 +59,7 @@ const Gallery = () => {
           {" "}
           Timer
         </Link>{" "}
-      </p>
+      </p> */}
       <ul>
         <li>
           <img

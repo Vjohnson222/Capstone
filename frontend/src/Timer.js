@@ -21,7 +21,7 @@ const Timer = () => {
   return (
     <div>
       <h6 className="camera--trigger2">{count}</h6>
-      {!isRunning && <button className="camera--trigger3" onClick={handleStart}>Start</button>}
+      {!isRunning && <button style ={{background: "transparent", borderRadius: "15%",color: "white",width: "140px", border: ".5px solid grey"}}className="camera--trigger3" onClick={handleStart}>Start</button>}
     </div>
   );
 };

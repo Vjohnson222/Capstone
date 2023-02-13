@@ -6,7 +6,7 @@ const RefreshButton = () => {
   };
 
   return (
-    <button className="camera--trigger" onClick={handleClick}>
+    <button id="refresh" className="camera--trigger" onClick={handleClick}>
       Refresh
     </button>
   );
