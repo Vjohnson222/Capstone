@@ -1,83 +1,82 @@
 import "./App.css";
 import React from "react";
-import Gallery from "./Gallery";
 
 function Terminology() {
  
   const cards = [
     {
       front: "Arabesque",
-      back: "A JavaScript library for building user interfaces"
+      back: "A position in which the dancer stands on one leg, with the other leg extended behind the body "
     },
 
     {
       front: "Attitude",
-      back: "A JavaScript library for building user interfaces"
+      back: " A position where the dancer stands on one leg and the other leg is lifted and bent at a 90-degree angle"
     },
     {
-      front: "Battement",
-      back: "A JavaScript library for building user interfaces"
+      front: "Grand Battement ",
+      back: "A position where the working leg is extended from the hip and then quickly lifted or struck in the air"
     },
     {
       front: "Coupé",
-      back: "A JavaScript library for building user interfaces"
+      back: "To cut. A position in which the working foot is placed at the ankle of the supporting leg"
     },
     {
-      front: "Degaje",
-      back: "A JavaScript library for building user interfaces"
+      front: "Degajé",
+      back: "Disengage. Where the working foot is lifted from the floor and pointed inches off the grounds"
     },
     {
       front: "Developpé",
-      back: "A state management library for JavaScript applications"
+      back: "A movement where the leg gradually develops from a position close to the body to an open position "
     },
     {
-      front: "Jeté",
-      back: "A JavaScript library for building user interfaces"
+      front: "Grand Jeté",
+      back: "A type of jump where the dancer springs off one foot and lands on the other"
     },
 
     {
       front: "Pas de bourrée",
-      back: "A JavaScript library for building user interfaces"
+      back: "A sequence of 3 small, quick steps in a specific pattern, typically crossing one foot behind the other"
     },
     {
       front: "Passé",
-      back: "A JavaScript library for building user interfaces"
+      back: "To pass - where the working foot is lifted and passes to the side of the knee of the supporting leg"
     },
     {
       front: "Pirouette",
-      back: "A JavaScript library for building user interfaces"
+      back: "With proper balance & visual focus, this movement refers to a complete turn of the body on releve and on one foot"
     },
-    {
-      front: "Plié",
-      back: "A JavaScript library for building user interfaces"
-    },
+    
     {
       front: "Port de bras",
-      back: "A state management library for JavaScript applications"
+      back: "To carry the arms a graceful and controlled motion from one position to another"
     },
     {
       front: "Rond de jambe",
-      back: "A JavaScript library for building user interfaces"
+      back: "A circular movement of the leg performed either frontwards ar to the back"
     },
 
     {
       front: "Tendu",
-      back: "A JavaScript library for building user interfaces"
+      back: "To stretch the leg and foot away from the body in one line while remaining on the floor"
     },
     {
-      front: "REACT",
-      back: "A JavaScript library for building user interfaces"
+      front: "Ballet Positions ",
+      back: "There are five basic positions of the feet, which are the foundation of all ballet movements"
     },
     {
-      front: "REACT",
-      back: "A JavaScript library for building user interfaces"
+      front: "Proper Dance Attire",
+      back: "Ballet leotard, Dance tights and the appropriate footware (Ballet or Point shoes)"
     },
-      
+    {
+      front: "Mindset",
+      back: "You can do anything you put your mind to. You can become anything you're willing to work hard enough for. The dance is easy. Becoming the dancer is where the work is. Just do it!"
+    },
   ];
 
   return (
     <div>
-    <div style={{ marginLeft: '220px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
+    <div className="introMessage">
     Flip,  Learn,  And Apply
     </div>
     <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginTop: '20px', borderTop: "solid white 2px"}}>
@@ -89,7 +88,7 @@ function Terminology() {
               <br />
               <div>{data.front}</div>
             </div>
-            <div className="flip-card-back">
+            <div className="flip-card-back cards">
               <div>{data.back}</div>
             </div>
           </div>

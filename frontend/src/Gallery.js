@@ -22,44 +22,7 @@ const Gallery = () => {
     <div style={{ marginLeft: '520px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
    Round And Round We Go
     </div>
-      
-      <p>
-        {" "}
-        <Link
-          to="/Videos"
-          className="navbar2"
-          style={{
-            textDecoration: "none",
-            padding: "5px",
-            marginTop: "-50px",
-            marginLeft: "1080px",
-            color: "white",
-            fontSize: "18px",
-          }}
-        >
-          {" "}
-          Videos
-        </Link>{" "}
-      </p>
-      {/* ---------------------Timer */}
-      {/* <p>
-        {" "}
-        <Link
-          to="/Timer"
-          className="navbar2"
-          style={{
-            textDecoration: "none",
-            padding: "5px",
-            marginTop: "-50px",
-            marginLeft: "1080px",
-            color: "white",
-            fontSize: "18px",
-          }}
-        >
-          {" "}
-          Timer
-        </Link>{" "}
-      </p> */}
+       
       <ul>
         <li>
           <img
@@ -100,9 +63,11 @@ const Gallery = () => {
       onClick={() => galleryspin("-")}>
         
       </div>
+      <div id="carousel">
+
       <figure
         id="spinner"
-        style={{ marginLeft: "110px", transform: `rotateY(${angle}deg)` }}
+        style={{ marginLeft: "110px", marginRight: "110px", transform: `rotateY(${angle}deg)` }}
       >
         <img src={one} alt="" />
         <img src={three} alt="" />
@@ -114,42 +79,9 @@ const Gallery = () => {
         <img src={two} alt="" />
       </figure>
 
-      <div id="carousel">
 
         {/* I silenced the old button and I took the whole party out of this carousel...It's debatable  */}
-        {/* <button
-          className="prevNext"
-          style={{
-            background: "transparent",
-            marginLeft: "-30px",
-            paddingTop: "0px",
-            paddingBottom: "5px",
-            height: "25px",
-            width: "80px",
-            borderRadius: "5px",
-            border: "solid 1px grey",
-          }}
-          onClick={() => galleryspin("")}
-        >
-          <h6> PREV </h6>
-        </button> */}
-
-        {/* <button
-          className="prevNext"
-          style={{
-            background: "transparent",
-            marginLeft: "1040px",
-            paddingTop: "0px",
-            paddingBottom: "5px",
-            height: "25px",
-            width: "80px",
-            borderRadius: "5px",
-            border: "solid 1px grey",
-          }}
-          onClick={() => galleryspin("-")}
-        >
-          <h6> NEXT </h6>
-        </button> */}
+        
       </div>
 
     </div>

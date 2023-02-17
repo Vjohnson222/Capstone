@@ -6,7 +6,7 @@ const Videos2 = () => {
 
   useEffect(() => {
     const key = "AIzaSyCtndV2Y6xntlF3sApHr8hJUEa4VeCukEA";
-    const playListId = "PLCaXxPHHJ1X5GvSIB_Ay5WRJiH4aoK1FH";
+    const playListId = "PLCaXxPHHJ1X7ZZm4GpAVXZL12S6nL-0IO";
     const URL = "https://www.googleapis.com/youtube/v3/playlistItems";
     const options = {
       part: "snippet",
@@ -35,7 +35,7 @@ const Videos2 = () => {
   };
 
   return (
-    <div className="container2">
+    <div className="container2 glow">
       <section id="video">
         <iframe
           width="860"

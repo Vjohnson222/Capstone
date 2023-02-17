@@ -6,7 +6,7 @@ const Thumb = () => {
 
   useEffect(() => {
     const key = "AIzaSyCtndV2Y6xntlF3sApHr8hJUEa4VeCukEA";
-    const playListId = "PLCaXxPHHJ1X5GvSIB_Ay5WRJiH4aoK1FH";
+    const playListId = "PLCaXxPHHJ1X7ZZm4GpAVXZL12S6nL-0IO";
     const URL = "https://www.googleapis.com/youtube/v3/playlistItems";
     const options = {
       part: "snippet",
@@ -35,11 +35,11 @@ const Thumb = () => {
   };
 
   return (
-    <div className="container2">
-      <section id="video">
-        <iframe
-          width="260"
-          height="115"
+    <div className="container2 ">
+      <section id="video" className="glow">
+        <iframe  
+          width="520"
+          height="230"
           src={`https://www.youtube.com/embed/${id}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"

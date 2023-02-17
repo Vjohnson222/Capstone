@@ -7,6 +7,8 @@ import Your from "./Your"
 import logo from "./logo.png";
 import Videos from "./Videos";
 import Timer from "./Timer";
+import { FaHome } from 'react-icons/fa';
+
 
 
 
@@ -22,9 +24,13 @@ function App2() {
          <nav className="navbar" >
 
 
-<Link className="navLink" to="/">
+{/* <Link className="navLink" to="/">
   {" "}
   HOME{" "}
+</Link> */}
+
+<Link className="navLink" to="/">
+  <FaHome className="home"/> {/* Using the FaHome icon from react-icons */}
 </Link>
 {/* ----------TERNARY----------------TREMINOLOGY------------- */}
 
@@ -32,22 +38,32 @@ function App2() {
   INTRODUCTION
 </Link>
 {/* ----------TERNARY----------------TERMINOLOGY------------- */}
-{loggedIn ? (
+{/* {loggedIn ? (
   <Link className="navLink" to="/terminology">
     TERMINOLOGY{" "}
   </Link>
 ) : (
   ""
-)}
+)} */}
+
+  <Link className="navLink" to="/terminology">
+    TERMINOLOGY{" "}
+  </Link>
 
 {/* ----------TERNARY----------------Videos------------- */}
-{loggedIn ? (
+{/* {loggedIn ? (
   <Link className="navLink" to="/Videos">
     Videos{" "}
   </Link>
 ) : (
   ""
-)}
+)} */}
+
+{/* Moved this to the end  */}
+  {/* <Link className="navLink" to="/Videos">
+    VIDEOS{" "}
+  </Link> */}
+
 
 {/* ----------TERNARY----------------Timer------------- */}
 {loggedIn ? (
@@ -60,7 +76,7 @@ function App2() {
 {/* --------------------------ART IN MOTION------------- */}
 
 <Link className="navLink" to="/Gallery">
-  ART IN MOTION{" "}
+GALLERY{" "}
 </Link>
 {/* --------------------------YOUR TURN------------- */}
 <Link className="navLink" to="/Your">
@@ -68,12 +84,14 @@ function App2() {
 </Link>
 {/* --------------------------ROUTES------------- */}
 
-
+<Link className="navLink" to="/Videos">
+    VIDEOS{" "}
+  </Link>
 </nav>
 <br />
 
       <div className="navbar2" > 
-      <img src={logo} alt="logo" className = "logo" style={{ borderRadius:'10%',marginTop:"-55px", marginLeft: '60px', opacity: "0.9"}}/>
+      <img src={logo} alt="logo" className = "logo" />
 
 
       

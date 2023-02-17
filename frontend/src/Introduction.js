@@ -4,7 +4,7 @@ import seven from "./seven.png";
 const Introduction = () => {
   return (
 
-    <div className="intro" style={{ marginLeft: '40px', marginTop: '5px',  marginBottom: '20px',color: 'white', fontSize: '25px' }}>
+    <div className="intro" style={{ marginLeft: '40px', marginTop: '-30px',  marginBottom: '20px',color: 'white', fontSize: '25px' }}>
     Welcome to Dance Flow!
    
     <div
@@ -39,7 +39,7 @@ const Introduction = () => {
           </div>
         </div>
       </div>
-      <br />
+     
       <p >
         Now that you've got the hang of it
         <Link to="/terminology"  style= {{ textDecoration: 'none', color: 'red',fontSize: '30px'

@@ -20,20 +20,23 @@ const Videos = () => {
   };
 
   return (
-    <div className="container">
+    <div className="containerVideo">
 
       
-      <div className="review">
+      <div className="review  containerVideo">
       {/* <Thumb className="thumb" /> */}
+        <img src={seven1} className="myImg " onClick={handleImageClick} />
+     <div class="centered">  <button className= "neonBut" onClick={handleImageClick}>ENTER</button></div>
 
-        <img src={seven1} className="myImg" style={{ width: "300px", height: "200px" }}  onClick={handleImageClick} />
       {/* Sheesh !!!!  so just remove this for now and let it ride the modal */}
         {/* <Thumb className="thumb" /> */}
         <div id="myModal" className="modal" style={{ display: modalDisplay }}>
       
         <div className="modal-content close myImg" id="img01"><Thumb/> </div>     
-        <span className="close video"  style={{ marginLeft: "920px" }}onClick={handleCloseClick}>&times;</span>
-         
+        {/* <span className="close video"  style={{ marginLeft: "920px" }}onClick={handleCloseClick}>&times;</span> */}
+        <span className="close video"  style={{ marginLeft: "920px", marginTop: "-60px" }}onClick={handleCloseClick}><button className= "neonBut2" > Exit</button>
+        </span>
+
          {/* This is what gets to ride the modal  */}
          {/* <div className="modal-content close myImg" id="img01"> <Videos2/> </div>             */}
 
