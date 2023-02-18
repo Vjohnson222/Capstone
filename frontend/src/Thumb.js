@@ -29,7 +29,7 @@ const Thumb = () => {
   }, []);
 
   const handleClick = (event) => {
-    if (event.target.tagName === "ARTICLE") {
+    if (event.target.tagName === "IMG") {
       setId(event.target.dataset.key);
     }
   };
@@ -46,6 +46,8 @@ const Thumb = () => {
           allowFullScreen
         />
       </section>
+
+      <div>  
       <main onClick={handleClick}>
         {data.items &&
           data.items.map((item, i) => {
@@ -56,13 +58,16 @@ const Thumb = () => {
             const description = item.snippet.description.substring(0, 100);
             const vid = item.snippet.resourceId.videoId;
             return (
-              <article key={i} data-key={vid}>
-                <img src={thumb} alt="" className="thumb" />
+   
+
+<img key={i} data-key={vid} src={thumb} alt="" className="thumb"/>
+               
                 
-              </article>
+             
             );
           })}
       </main>
+      </div>
     </div>
   );
 };

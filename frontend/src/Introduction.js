@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import seven from "./seven.png";
 
 const Introduction = () => {
   return (
