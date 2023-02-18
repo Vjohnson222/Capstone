@@ -18,8 +18,8 @@ const Gallery = () => {
   };
 
   return (
-    <div>
-    <div style={{ marginLeft: '520px', marginTop: '5px',  marginBottom: '2px',color: 'white', fontSize: '25px' }}>
+    <div className="navbar3" >
+    <div  style={{ marginLeft: '440px', marginTop: '5px',  marginBottom: '1px',color: 'white', fontSize: '30px' }}>
    Round And Round We Go
     </div>
        

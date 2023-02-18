@@ -84,7 +84,7 @@ const handleLeftClick = () => {
   };
   
 return (
-  <div >
+  <div  >
     <div className="row" >
       <div className="column" >
         <main id="bob" >

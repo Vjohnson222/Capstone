@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import seven1 from "./seven1.png";
 import Videos2 from './Videos2';
 import Thumb from './Thumb';
-import seven from "./seven.png";
 import Extra from './Extra';
 
 

@@ -4,7 +4,7 @@ import seven from "./seven.png";
 const Introduction = () => {
   return (
 
-    <div className="intro" style={{ marginLeft: '40px', marginTop: '-30px',  marginBottom: '20px',color: 'white', fontSize: '25px' }}>
+    <div className="intro navbar4" style={{ marginLeft: '40px', marginTop: '-30px',  marginBottom: '20px',color: 'white', fontSize: '25px' }}>
     Welcome to Dance Flow!
    
     <div
