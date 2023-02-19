@@ -100,10 +100,10 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 3%;
   font-size: 20px;
   transition: all 5s;
-  padding-right: 15px;
+  padding-right: 10px;
   animation-duration: 13.9s;
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -118,24 +118,66 @@
 }
 
 .navbar {
-  padding-top: 5%; /* 5% of the parent element's width */
+  /* padding-top: 5%;
   position: fixed;
-  height: 5%; /* 5% of the parent element's width */
-  float: right;
-  margin-right: 20%; /* 10% of the parent element's width */
+  height: 5%;
+  margin-right: 10%;
+  margin-left: 6%;
   padding-left: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   font-style: italic;
-  /* Change 1 */
-  /* background-color: rgb(49, 2, 2); */
   background-color: rgb(42, 41, 41);
   border: solid rgb(83, 81, 81) 1px;
   animation-duration: 13.9s;
-} 
+  
+  */
+
+  margin-right: 10%;
+  margin-left: 6%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-style: italic;
+  background-color: rgb(42, 41, 41);
+  border: solid rgb(83, 81, 81) 1px;
+  animation-duration: 13.9s;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar a {
+    margin: 0 10px;
+  }
+}
+
+
+ 
+
+
   .navbar2 {
+    margin-top: -3.5%;
     padding-top: 0;
     height: 8%; /* 60px/parent element's height * 100 */
     margin-left: 1%; /* 20px/parent element's width * 100 */
@@ -167,6 +209,28 @@
   border: solid rgb(83, 81, 81) 1px;
   animation-duration: 13.9s;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar3 {
+    font-size: 10px;
+    margin-top: -30%;
+  }
+  
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .navbar3 {
+    font-size: 60px;
+    margin-top: -60%;
+
+  }
+}
+  @media screen and (min-width: 901) and (max-width: 1500px) {
+    .navbar3 {
+     font-size: 200px;
+    }
+}
+
 .navbar4 {
   padding-top: 1%; /* 10px/parent element's height * 100 */
   margin-left: 3.125%; /* 25px/parent element's width * 100 */
@@ -411,11 +475,12 @@ div#carousel ~ span:hover {
 }
 .logo {
   width: 3.66666666667%;
-  height: 2.5.83333333333%;
-  border-radius: 10%;
-  margin-top: -4.16666666667%;
-  margin-left: 4.06111111111%;
+  height: 2.8.83333333333%;
+  border-radius: 15px;
+  margin-top: -3.16666666667%;
+  margin-left: 1.00001111111%;
   opacity: 0.9;
+  border-radius: 10%;
 }
 
 /* ---------------------------Videos----------------------------- */
@@ -518,12 +583,12 @@ div#carousel ~ span:hover {
 .glow:after {
   content: "";
   position: absolute;
-  left: -2px;
+  left: -3px;
   top: -2px;
   background: linear-gradient(to right, #00f260, #0575e6, #00f260);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  /* background-size: 400%; */
+  width: 101%;
+  height: 100%;
   z-index: -1;
   border-radius: 10px;
   border-radius: inherit;
@@ -563,6 +628,8 @@ div#carousel ~ span:hover {
 
 .thumb:hover {
   background: linear-gradient(to right, #00f260, #0575e6, #00f260);
+  animation: steam 20s infinite alternate;
+
 }
 .intro {
   position: absolute;
@@ -576,22 +643,23 @@ div#carousel ~ span:hover {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+}/* ENTER */
 .neonBut {
   background-color: transparent;
   border: 1px solid white;
   color: white;
   border-radius: 10%;
   font-size: 100%;
-}
+} /* EXIT */
 .neonBut2 {
+  position: absolute;
   background-color: transparent;
   color: white;
   border: 1px solid white;
   border-radius: 10%;
   font-size: 120%;
   margin-top: 50%;
-  margin-left: 35%;
+  margin-right: 50%;
  }
 /* Fahome  */
 .home {

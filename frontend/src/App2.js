@@ -23,6 +23,7 @@ function App2() {
       <br />
          <nav className="navbar" >
 
+         <img src={logo} alt="logo" className = "logo" />
 
 {/* <Link className="navLink" to="/">
   {" "}
@@ -87,11 +88,12 @@ GALLERY{" "}
 <Link className="navLink" to="/Videos">
     VIDEOS{" "}
   </Link>
+
 </nav>
 <br />
 
       <div className="navbar2" > 
-      <img src={logo} alt="logo" className = "logo" />
+      {/* <img src={logo} alt="logo" className = "logo" /> */}
 
 
       

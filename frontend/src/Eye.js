@@ -11,7 +11,7 @@ const Eye = () => {
   textAlign: 'center',
   fontSize: '200px',
   fontWeight: 'bold',
-  marginLeft: '120px',
+  marginLeft: '100px',
   color: 'white'
   
 };

@@ -27,10 +27,11 @@ const Videos = () => {
      <div class="centered">  <button className= "neonBut" onClick={handleImageClick}>ENTER</button></div>
 
       {/* Sheesh !!!!  so just remove this for now and let it ride the modal */}
+        {/* <Thumb className="thumb" /> */}
         <div id="myModal" className="modal" style={{ display: modalDisplay }}>
       
         <div className="modal-content close myImg" id="img01"><Thumb/> </div>     
-        <span className="close video"  style={{ marginLeft: "920px", marginTop: "-60px" }}onClick={handleCloseClick}><button className= "neonBut2" > Exit</button>
+        <span className="close video"  style={{ marginLeft: "70%", marginTop: "-1%" }}onClick={handleCloseClick}><button className= "neonBut2" > Exit</button>
         </span>
 
          {/* This is what gets to ride the modal  */}
