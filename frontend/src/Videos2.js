@@ -49,7 +49,10 @@ const Videos2 = () => {
       <main onClick={handleClick}>
         {data.items &&
           data.items.map((item, i) => {
-            const thumb = item.snippet.thumbnails && item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url : null;
+            const thumb =
+              item.snippet.thumbnails && item.snippet.thumbnails.medium
+                ? item.snippet.thumbnails.medium.url
+                : null;
 
             // const thumb = item.snippet.thumbnails.medium.url;
             const title = item.snippet.title;

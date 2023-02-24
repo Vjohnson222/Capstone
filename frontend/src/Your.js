@@ -7,20 +7,11 @@ const Your = () => {
   const [count, setCount] = useState(0);
   const [cameraViewSrc, setCameraViewSrc] = useState();
 
-
-  
-  // const arr = [
-  //   "http://res.cloudinary.com/pixelplus/image/upload/v1510295441/black-and-white-photography-1024x584_niptgw.jpg",
-  //   "http://res.cloudinary.com/pixelplus/image/upload/v1510793289/mammoth_jfeeza.jpg",
-  //   "http://res.cloudinary.com/pixelplus/image/upload/v1468260297/sample.jpg",
-  //   "http://res.cloudinary.com/pixelplus/image/upload/v1510793289/Yellowstone_National_Park_001_tztczt.jpg"
-  // ];
-
   const arr = [
     "./images/one.jpg",
     "./images/two.jpg",
     "./images/three.jpg",
-    "./images/four.jpg"
+    "./images/four.jpg",
   ];
   const len = arr.length;
 
@@ -40,96 +31,106 @@ const Your = () => {
       }
     };
     cameraStart();
-
   }, []);
 
- 
-const handleCameraTrigger = () => {
-  setTimeout(() => {
+  const handleCameraTrigger = () => {
+    setTimeout(() => {
+      const cameraView = document.getElementById("camera--view");
+      const cameraSensor = document.getElementById("camera--sensor");
+      const cameraOutput = document.getElementById("camera--output");
 
-  const cameraView = document.getElementById("camera--view");
-  const cameraSensor = document.getElementById("camera--sensor");
-  const cameraOutput = document.getElementById("camera--output");
+      // Set the canvas to the same dimensions as the video
+      cameraSensor.width = cameraView.videoWidth;
+      cameraSensor.height = cameraView.videoHeight;
 
-  // Set the canvas to the same dimensions as the video
-  cameraSensor.width = cameraView.videoWidth;
-  cameraSensor.height = cameraView.videoHeight;
+      // Draw the video frame to the canvas
+      cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
 
-  // Draw the video frame to the canvas
-  cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
+      // Extract the image data from the canvas
+      cameraOutput.src = cameraSensor.toDataURL("image/webp");
 
-  // Extract the image data from the canvas
-  cameraOutput.src = cameraSensor.toDataURL("image/webp");
-
-  // Set the image data as the src for the output image
-  // cameraOutput.setAttribute("src", imageData);
-  cameraOutput.classList.add("taken");
-}, 15000);
-};
-
-const handleLeftClick = () => {
-  if (count === 0) {
-  setCount(len - 1);
-  } else {
-  setCount(count - 1);
-  }
+      // Set the image data as the src for the output image
+      // cameraOutput.setAttribute("src", imageData);
+      cameraOutput.classList.add("taken");
+    }, 15000);
   };
-  
+
+  const handleLeftClick = () => {
+    if (count === 0) {
+      setCount(len - 1);
+    } else {
+      setCount(count - 1);
+    }
+  };
+
   const handleRightClick = () => {
-  if (count === len - 1) {
-  setCount(0);
-  } else {
-  setCount(count + 1);
-  }
+    if (count === len - 1) {
+      setCount(0);
+    } else {
+      setCount(count + 1);
+    }
   };
-  
-return (
-  <div  >
-    <div className="row" >
-      <div className="column" >
-        <main id="bob" >
-          <ul>
-            <li><img className="left" src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg" /></li>
-            <li><img className="right" src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg" /></li>
-          </ul>
-         <div className="image image-height">
-    <img className="images" src={require(`${arr[count]}`)} alt={`img${count}`} />
-    </div>
+
+  return (
+    <div>
+      <div className="row">
+        <div className="column">
+          <main id="bob">
+            <ul>
+              <li>
+                <img
+                  className="left"
+                  src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg"
+                />
+              </li>
+              <li>
+                <img
+                  className="right"
+                  src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg"
+                />
+              </li>
+            </ul>
+            <div className="image image-height">
+              <img
+                className="images"
+                src={require(`${arr[count]}`)}
+                alt={`img${count}`}
+              />
+            </div>
           </main>
+        </div>
+      </div>
+      <div className="row">
+        <div className="column2">
+          <main id="camera">
+            <canvas id="camera--sensor"></canvas>
+            <video id="camera--view" autoPlay playsInline></video>
+            <img src="#" alt="🏃‍♀️🏃‍♀️🏃‍♀️" id="camera--output" />
+            <button id="camera--trigger" onClick={handleCameraTrigger}>
+              Take a picture
+              <div>
+                <Timer />
+              </div>
+            </button>
+          </main>
+          <RefreshButton />
+        </div>
+      </div>
+      <div
+        className="left"
+        style={{ color: "transparent" }}
+        onClick={handleLeftClick}
+      >
+        ←←←
+      </div>
+      <div
+        className="right"
+        style={{ color: "transparent" }}
+        onClick={handleRightClick}
+      >
+        →←←
       </div>
     </div>
-         <div className="row" >
-      <div className="column2">
-        <main id="camera">
-          <canvas id="camera--sensor"></canvas>
-          <video id="camera--view" autoPlay playsInline></video>
-          <img src="#" alt="🏃‍♀️🏃‍♀️🏃‍♀️" id="camera--output" />
-          <button  id="camera--trigger" onClick={handleCameraTrigger}>
-         
-  Take a picture
-  
-  <div >  
-  
-  
-    <Timer  />
-  </div>
- 
-</button>
-
-
-        </main>
-        <RefreshButton/>
-      </div>
-    </div>
-    <div className="left" style ={{color: "transparent"}} onClick={handleLeftClick}>
-            ←←←
-          </div>
-          <div className="right" style ={{color: "transparent"}}onClick={handleRightClick}>
-            →←←
-          </div>
-    
-  </div>
-  
-);
+  );
 };
 export default Your;

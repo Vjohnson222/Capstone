@@ -37,8 +37,8 @@ const Thumb = () => {
   return (
     <div className="container2 ">
       <section id="video" className="glow">
-        <iframe  
-          width="520"
+        <iframe
+          width="98.5%"
           height="230"
           src={`https://www.youtube.com/embed/${id}`}
           frameBorder="0"
@@ -47,26 +47,28 @@ const Thumb = () => {
         />
       </section>
 
-      <div>  
-      <main onClick={handleClick}>
-        {data.items &&
-          data.items.map((item, i) => {
-            const thumb = item.snippet.thumbnails && item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url : null;
-
-            // const thumb = item.snippet.thumbnails.medium.url;
-            const title = item.snippet.title;
-            const description = item.snippet.description.substring(0, 100);
-            const vid = item.snippet.resourceId.videoId;
-            return (
-   
-
-<img key={i} data-key={vid} src={thumb} alt="" className="thumb"/>
-               
-                
-             
-            );
-          })}
-      </main>
+      <div>
+        <main onClick={handleClick}>
+          {data.items &&
+            data.items.map((item, i) => {
+              const thumb =
+                item.snippet.thumbnails && item.snippet.thumbnails.medium
+                  ? item.snippet.thumbnails.medium.url
+                  : null;
+              const title = item.snippet.title;
+              const description = item.snippet.description.substring(0, 100);
+              const vid = item.snippet.resourceId.videoId;
+              return (
+                <img
+                  key={i}
+                  data-key={vid}
+                  src={thumb}
+                  alt=""
+                  className="thumb"
+                />
+              );
+            })}
+        </main>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Timer = () => {
   const [count, setCount] = useState(15);
@@ -21,7 +21,21 @@ const Timer = () => {
   return (
     <div>
       <h6 className="camera--trigger2">{count}</h6>
-      {!isRunning && <button style ={{background: "transparent", borderRadius: "15%",color: "white",width: "140px", border: ".5px solid grey"}}className="camera--trigger3" onClick={handleStart}>Start</button>}
+      {!isRunning && (
+        <button
+          style={{
+            background: "transparent",
+            borderRadius: "15%",
+            color: "white",
+            width: "140px",
+            border: ".5px solid grey",
+          }}
+          className="camera--trigger3"
+          onClick={handleStart}
+        >
+          Start
+        </button>
+      )}
     </div>
   );
 };

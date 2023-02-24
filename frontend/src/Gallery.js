@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import one from "./images/one.jpg";
 import two from "./images/two.jpg";
 import three from "./images/three.jpg";
@@ -18,11 +17,19 @@ const Gallery = () => {
   };
 
   return (
-    <div className="navbar3" >
-    <div  style={{ marginLeft: '440px', marginTop: '5px',  marginBottom: '1px',color: 'white', fontSize: '30px' }}>
-   Round And Round We Go
-    </div>
-       
+    <div className="navbar3">
+      <div
+        style={{
+          marginLeft: "440px",
+          marginTop: "5px",
+          marginBottom: "1px",
+          color: "white",
+          fontSize: "30px",
+        }}
+      >
+        Round And Round We Go
+      </div>
+
       <ul>
         <li>
           <img
@@ -37,53 +44,47 @@ const Gallery = () => {
           />
         </li>
       </ul>
-      <div className="left2" 
+      <div
+        className="left2"
         style={{
-         
           background: "transparent",
           paddingTop: "20px",
           paddingBottom: "5px",
           height: "25px",
           width: "80px",
-          
         }}
-      
-      onClick={() => galleryspin("")}>
-        
-      </div>
-      <div className="right2" 
+        onClick={() => galleryspin("")}
+      ></div>
+      <div
+        className="right2"
         style={{
-         
           background: "transparent",
           paddingTop: "20px",
           paddingBottom: "5px",
           height: "25px",
-          width: "80px"
+          width: "80px",
         }}
-      onClick={() => galleryspin("-")}>
-        
-      </div>
+        onClick={() => galleryspin("-")}
+      ></div>
       <div id="carousel">
-
-      <figure
-        id="spinner"
-        style={{ marginLeft: "110px", marginRight: "110px", transform: `rotateY(${angle}deg)` }}
-      >
-        <img src={one} alt="" />
-        <img src={three} alt="" />
-        <img src={eight} alt="" />
-        <img src={four} alt="" />
-        <img src={five} alt="" />
-        <img src={six} alt="" />
-        <img src={seven} alt="" />
-        <img src={two} alt="" />
-      </figure>
-
-
-        {/* I silenced the old button and I took the whole party out of this carousel...It's debatable  */}
-        
+        <figure
+          id="spinner"
+          style={{
+            marginLeft: "110px",
+            marginRight: "110px",
+            transform: `rotateY(${angle}deg)`,
+          }}
+        >
+          <img src={one} alt="" />
+          <img src={three} alt="" />
+          <img src={eight} alt="" />
+          <img src={four} alt="" />
+          <img src={five} alt="" />
+          <img src={six} alt="" />
+          <img src={seven} alt="" />
+          <img src={two} alt="" />
+        </figure>
       </div>
-
     </div>
   );
 };
