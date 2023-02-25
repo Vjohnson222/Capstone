@@ -1,16 +1,7 @@
 import React from "react";
 
 const Eye = () => {
-  const h1Style = {
-    display: "inline-block",
-    fontFamily: "Great Vibes, cursive",
-    textAlign: "center",
-    fontSize: "200px",
-    fontWeight: "bold",
-    marginLeft: "100px",
-    color: "white",
-  };
-
+ 
   const divStyle = { display: "inline-block" };
   return (
     <div className="navbar3">
@@ -20,7 +11,7 @@ const Eye = () => {
       <br />
       <hr />
       <br />
-      <h1 style={h1Style}>
+      <h1 className="h1Style" >
         <p>Dance Flow</p>
       </h1>
       <hr />

@@ -1,4 +1,5 @@
 import React from "react";
+import Timer from "./Timer";
 
 const RefreshButton = () => {
   const handleClick = () => {
@@ -7,8 +8,11 @@ const RefreshButton = () => {
 
   return (
     <button id="refresh" className="camera--trigger" onClick={handleClick}>
-      Refresh
-    </button>
+      REFRESH
+
+       </button>
+       
+  
   );
 };
 

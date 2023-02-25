@@ -105,7 +105,7 @@ const Your = () => {
           <main id="camera">
             <canvas id="camera--sensor"></canvas>
             <video id="camera--view" autoPlay playsInline></video>
-            <img src="#" alt="🏃‍♀️🏃‍♀️🏃‍♀️" id="camera--output" />
+            <img src="#" alt=" " id="camera--output" />
             <button id="camera--trigger" onClick={handleCameraTrigger}>
               Take a picture
               <div>

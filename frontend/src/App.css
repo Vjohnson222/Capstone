@@ -130,13 +130,48 @@
   padding: 20px;
   font-size: 16px;
 }
+.h1Style{   
+  display: inline-block;
+  font-family: Great Vibes, cursive;
+  text-align: center;
+  font-size: 200px;
+  font-weight: bold;
+  margin-left: 110px;
+  color: white;  
 
+}
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
   }
+  .navbar2 {
+    padding-top: 1%; /* 10px/parent element's height * 100 */
+    margin-left: 3.125%; /* 25px/parent element's width * 100 */
+    margin-right: 3.125%; /* 25px/parent element's width * 100 */
+    margin-top: 5%; /* 20px/parent element's height * 100 */
+    padding-left: 0;  
+    font-style: italic;
+    border-radius: 10px;
+    height: 1000px;
+    background-color: rgb(59, 57, 57);
+    border: solid rgb(83, 81, 81) 1px;
+    animation-duration: 13.9s;
+  }
   .navbar a {
     margin-bottom: 10px;
+  }
+  body{
+    font-size: 10px;
+  }
+  .h1Style{ 
+    font-size: 35px;
+    display: inline-block;
+  font-family: Great Vibes, cursive;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 60px;
+  color: white;  
+  margin-top: 120px;
   }
 }
 
@@ -368,7 +403,7 @@ div#carousel ~ span:hover {
   } */
 #camera--trigger {
   width: 150px;
-  background-color: rgb(42, 41, 41);
+  background-color: transparent;
   color: white;
   font-size: 18px;
   border-radius: 10%;
@@ -385,11 +420,13 @@ div#carousel ~ span:hover {
   width: 12.5%;
   font-size: 0.9rem;
   border-radius: 10%;
-  top: 0;
-  left: 80.75%;
-  padding-bottom: 1.25%;
-  padding-top: 1.25%;
+  top: -1.5%;
+  left: 85.75%;
+  padding-bottom: -10.25%;
+  padding-top: -1.25%;
   background-color: rgb(42, 41, 41);
+  background-color: transparent;
+
   color: white;
   border: none;
   text-align: center;
@@ -397,6 +434,25 @@ div#carousel ~ span:hover {
   position: fixed;
 }
 #refresh {
+  width: 10.5%;
+  font-size: 20px;
+  border-radius: 5%;
+  top: -200.99%;
+  left: 80.04%;
+  position: relative;
+  background-color: transparent;
+  background-color: rgb(42, 41, 41);
+
+  color: white;
+  border: none;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+
+
+/* 
+.timer {
   width: 12.5%;
   font-size: 18px;
   border-radius: 5%;
@@ -408,7 +464,7 @@ div#carousel ~ span:hover {
   border: none;
   text-align: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 .left {
   position: absolute;

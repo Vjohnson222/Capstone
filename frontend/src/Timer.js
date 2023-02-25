@@ -20,7 +20,9 @@ const Timer = () => {
 
   return (
     <div>
-      <h6 className="camera--trigger2">{count}</h6>
+    <h6 className="camera--trigger2" style={{ color: "red", fontSize: "30px"  }}>
+  {count}
+</h6>
       {!isRunning && (
         <button
           style={{
@@ -28,7 +30,9 @@ const Timer = () => {
             borderRadius: "15%",
             color: "white",
             width: "140px",
-            border: ".5px solid grey",
+            border: "none",
+            padding: "0", 
+           
           }}
           className="camera--trigger3"
           onClick={handleStart}
