@@ -27,15 +27,17 @@ Dance flow is a capstone project that serves to culminate a 26-week full stack w
 ### **Project** Screenshots:
 ---
 Below Please find a visual representation  reflective of the navigation bar's layout for each page visited 
+> HOME PAGE
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/face.png?raw=true)
 > INTRODUCTION
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
-> INTRODUCTION
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/introduction.PNG?raw=true)
 > TERMINOLOGY
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/terminology.PNG?raw=true)
 > GALLERY
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/gallery.PNG?raw=true)
 > YOUR TURN
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
-> VIDEOS
-![result-1](https://raw.githubusercontent.com/wesleyhedrick/Capstone/master/capstone-fe/src/components/images/slide1.jpg)
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/your.PNG?raw=true)
+> VIDEOS:1
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/video1.PNG?raw=true)
+> VIDEOS2
+![result-1](https://github.com/Vjohnson222/Capstone/blob/main/video2.PNG?raw=true)
