@@ -434,11 +434,11 @@ div#carousel ~ span:hover {
   position: fixed;
 }
 #refresh {
-  width: 10.5%;
+  width: 11.5%;
   font-size: 20px;
   border-radius: 5%;
-  top: -200.99%;
-  left: 80.04%;
+  top: -160.99%;
+  left: 79.54%;
   position: relative;
   background-color: transparent;
   background-color: rgb(42, 41, 41);
