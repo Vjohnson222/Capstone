@@ -20,7 +20,7 @@ const Gallery = () => {
     <div className="navbar3">
       <div
         style={{
-          marginLeft: "440px",
+          marginLeft: "550px",
           marginTop: "5px",
           marginBottom: "1px",
           color: "white",
@@ -70,8 +70,8 @@ const Gallery = () => {
         <figure
           id="spinner"
           style={{
-            marginLeft: "110px",
-            marginRight: "110px",
+            marginLeft: "200px",
+            marginRight: "200px",
             transform: `rotateY(${angle}deg)`,
           }}
         >

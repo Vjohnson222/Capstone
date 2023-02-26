@@ -6,7 +6,7 @@ const Introduction = () => {
       className="intro navbar4"
       style={{
         marginLeft: "40px",
-        marginTop: "32px",
+        marginTop: "42px",
         marginBottom: "20px",
         color: "white",
         fontSize: "25px",
@@ -58,7 +58,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
-
+<br />
         <p>
           Now that you've got the hang of it
           <Link

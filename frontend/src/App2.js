@@ -47,14 +47,16 @@ function App2() {
         <Link className="navLink" to="/Gallery">
           GALLERY{" "}
         </Link>
-        {/* --------------------------YOUR TURN------------- */}
-        <Link className="navLink" to="/Your">
-          YOUR TURN{" "}
-        </Link>
-        {/* --------------------------ROUTES------------- */}
+       
+        {/* --------------------------Videos------------- */}
 
         <Link className="navLink" to="/Videos">
           VIDEOS{" "}
+        </Link>
+
+         {/* --------------------------YOUR TURN------------- */}
+         <Link className="navLink" to="/Your">
+          YOUR TURN{" "}
         </Link>
       </nav>
       <br />

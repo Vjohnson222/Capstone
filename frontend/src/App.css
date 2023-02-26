@@ -97,10 +97,10 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
-  margin-left: 3%;
+  /* margin-left: 3%; */
   font-size: 20px;
   transition: all 5s;
-  padding-right: 10px;
+  padding-right: 25px;
   animation-duration: 13.9s;
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -127,7 +127,7 @@
   animation-duration: 13.9s;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   font-size: 16px;
 }
 .h1Style{   
@@ -136,7 +136,7 @@
   text-align: center;
   font-size: 200px;
   font-weight: bold;
-  margin-left: 110px;
+  margin-left: 210px;
   color: white;  
 
 }
@@ -181,10 +181,10 @@
     justify-content: center;
   }
   .navbar a {
-    margin: 0 10px;
+    margin: 0 5px;
   }
   .navLink {
-    margin-left: 3%;
+    margin-left: 2%;
     font-size: 10px;
   }
   .break-word {
@@ -523,7 +523,7 @@ div#carousel ~ span:hover {
   width: 3.66666666667%;
   height: 2.8.83333333333%;
   border-radius: 15px;
-  margin-top: -3.16666666667%;
+  margin-top: -1.16666666667%;
   margin-left: 1.00001111111%;
   opacity: 0.9;
   border-radius: 10%;
