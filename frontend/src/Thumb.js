@@ -40,6 +40,9 @@ const Thumb = () => {
         <iframe
           width="98.5%"
           height="230"
+fromvid2
+          // width="860"
+          // height="415"
           src={`https://www.youtube.com/embed/${id}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"
