@@ -664,7 +664,7 @@ div#carousel ~ span:hover {
   border-radius: 10%;
   width: 160px;
   padding: 10px;
-  margin-left: -8%;
+  margin-left: 1%;
   display: flex;
   position: sticky;
 }

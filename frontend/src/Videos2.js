@@ -38,6 +38,7 @@ const Videos2 = () => {
     <div className="container2 glow">
       <section id="video">
         <iframe
+        title="video-player-1"
           width="860"
           height="415"
           src={`https://www.youtube.com/embed/${id}`}

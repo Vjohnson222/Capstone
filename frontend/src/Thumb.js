@@ -40,9 +40,7 @@ const Thumb = () => {
         <iframe
           width="98.5%"
           height="230"
-fromvid2
-          // width="860"
-          // height="415"
+          title="video-player-1"
           src={`https://www.youtube.com/embed/${id}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -62,13 +60,18 @@ fromvid2
               const description = item.snippet.description.substring(0, 100);
               const vid = item.snippet.resourceId.videoId;
               return (
+                <div className="details">
                 <img
                   key={i}
                   data-key={vid}
                   src={thumb}
                   alt=""
-                  className="thumb"
-                />
+                  className="thumb"/>
+                  <div style={{display: "none"}}>
+                  <h5>{title}</h5>
+                  <p>{description}</p>
+                  </div>
+                </div>
               );
             })}
         </main>
