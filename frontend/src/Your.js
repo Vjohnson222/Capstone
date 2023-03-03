@@ -5,7 +5,7 @@ import RefreshButton from "./RefreshButton";
 
 const Your = () => {
   const [count, setCount] = useState(0);
-  const [cameraViewSrc, setCameraViewSrc] = useState();
+  const [setCameraViewSrc] = useState();
 
   const arr = [
     "./images/one.jpg",
@@ -31,7 +31,7 @@ const Your = () => {
       }
     };
     cameraStart();
-  }, []);
+  }, [setCameraViewSrc]); // add setCameraViewSrc to dependency array
 
   const handleCameraTrigger = () => {
     setTimeout(() => {
@@ -81,13 +81,15 @@ const Your = () => {
                 <img
                   className="left"
                   src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg"
-                />
+                  alt="" 
+               />
               </li>
               <li>
                 <img
                   className="right"
                   src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg"
-                />
+                  alt="" 
+              />
               </li>
             </ul>
             <div className="image image-height">

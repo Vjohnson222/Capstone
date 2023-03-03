@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import one from "./images/one.jpg";
 import two from "./images/two.jpg";
 import three from "./images/three.jpg";
@@ -35,12 +35,14 @@ const Gallery = () => {
           <img
             className="left2"
             src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-left-01_186410_rznilq.svg"
+            alt=""
           />
         </li>
         <li>
           <img
             className="right2"
             src="http://res.cloudinary.com/pixelplus/image/upload/v1510707716/if_arrow-right-01_186409_dd80gq.svg"
+            alt=""
           />
         </li>
       </ul>

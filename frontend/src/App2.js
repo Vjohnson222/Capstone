@@ -12,7 +12,7 @@ import { FaHome } from "react-icons/fa";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App2() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn] = useState(false);
 
   return (
     <Router className="navbar">

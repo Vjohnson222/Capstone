@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Introduction from "./Introduction";
 
 function App() {

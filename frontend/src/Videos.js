@@ -4,7 +4,7 @@ import Thumb from "./Thumb";
 
 const Videos = () => {
   const [modalDisplay, setModalDisplay] = useState("none");
-  const [modalImgSrc, setModalImgSrc] = useState("");
+  const [setModalImgSrc] = useState("");
 
   const handleImageClick = (event) => {
     setModalDisplay("block");
@@ -18,7 +18,7 @@ const Videos = () => {
   return (
     <div>
       <div className="review ">
-        <img src={seven1} className="myImg " onClick={handleImageClick} />
+        <img src={seven1} alt="" className="myImg " onClick={handleImageClick} />
         <div class="centered">
           {" "}
           <button className="neonBut" onClick={handleImageClick}>
