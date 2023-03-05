@@ -26,12 +26,14 @@ const Your = () => {
         setCameraViewSrc(stream);
         const videoElement = document.getElementById("camera--view");
         videoElement.srcObject = stream;
+        console.log(cameraViewSrc);
+
       } catch (error) {
         console.error("Oops. Something is broken.", error);
       }
     };
     cameraStart();
-  }, [setCameraViewSrc]); // add setCameraViewSrc to dependency array
+  }, []); // add setCameraViewSrc to dependency array
 
   const handleCameraTrigger = () => {
     setTimeout(() => {
