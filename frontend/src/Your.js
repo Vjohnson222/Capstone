@@ -5,7 +5,7 @@ import RefreshButton from "./RefreshButton";
 
 const Your = () => {
   const [count, setCount] = useState(0);
-  const [setCameraViewSrc] = useState();
+  const [cameraViewSrc, setCameraViewSrc] = useState();
 
   const arr = [
     "./images/one.jpg",
